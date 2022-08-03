@@ -4,8 +4,12 @@ function Nav() {
   return (
     <div style={{
         "display":"flex",
-        "justifyContent":"space-around"
-    }} > 
+        "justifyContent":"space-around",
+        "backgroundColor":"skyblue"
+    }} >
+         <Link to={'/home'} >
+            <ul>Home</ul>
+        </Link>
         <Link to={'/login'} >
             <ul>Login</ul>
         </Link>

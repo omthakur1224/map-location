@@ -6,6 +6,7 @@ import {Routes,Route} from 'react-router-dom'
 import Home from './components/Home'
 import Login from './components/Login'
 import Signup from './components/Signup'
+import Map from './components/Map'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/home' element={<Home/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<Signup/>} />
+          <Route path='/map/:id' element={<Map/>}/>
         </Routes>
     </div>
   )

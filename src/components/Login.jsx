@@ -28,7 +28,16 @@ function Login() {
         })
     }
   return (
-    <div>
+    <div style={{
+        "display":"flex",
+        "flexDirection":"column",
+        "gap":"20px",
+        "width":"500px",
+        "alignContent":"center",
+        "alignItems":"center",
+        "margin":"auto",
+        "backgroundColor":"teal"
+    }}>
         <input id='email' type="email" placeholder='Enter registerd Email' onChange={handleChange}/>
         <input id='password' type='password' placeholder='enter your password' onChange={handleChange}/>
         <button onClick={handleLogin}>LogIn</button>

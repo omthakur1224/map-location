@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
 import { AuthContext } from '../contexts/AuthContext';
+
 function Signup() {
 
     const [text,setText]=useState({});
@@ -33,7 +34,16 @@ function Signup() {
     }
 
   return (
-    <div>
+    <div style={{
+        "display":"flex",
+        "flexDirection":"column",
+        "gap":"20px",
+        "width":"500px",
+        "alignContent":"center",
+        "alignItems":"center",
+        "margin":"auto",
+        "backgroundColor":"lightcoral"
+    }}>
         <input id='name' type="text" placeholder='enter your name' onChange={handleChange} />
         <input id='email' type="email" placeholder='enter a valid email' onChange={handleChange} />
         <input id='password' type="password" placeholder='enter your passsword' onChange={handleChange} />
